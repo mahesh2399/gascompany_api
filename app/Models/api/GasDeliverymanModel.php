@@ -1,20 +1,22 @@
 <?php
+
 namespace App\Models\api;
 
 use CodeIgniter\Model;
 
-class CustomersModel extends Model
+class GasDeliverymanModel extends Model
 {
-    protected $table = 'Customers';
-    protected $primaryKey = 'id'; 
-    protected $useAutoIncrement = false;
+    protected $table = 'gas_deliveryman';
+    protected $primaryKey = 'id';
+    protected $useAutoIncrement = true;
     protected $allowedFields = [
         'id',
+        'name',
         'email',
         'phonenumber',
         'address',
         'password',
-        'user_type', 
+        'user_type',
         'is_mobile_verified',
         'mobile_otp',
         'description',
